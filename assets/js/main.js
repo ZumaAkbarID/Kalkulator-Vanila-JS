@@ -28,8 +28,12 @@ function formatNomor(nomor) {
 	return values;
 }
 
-function kembalikanNomorFormat(nomor){
+function kembalikanNomorFormat(nomor) {
 	return Number(nomor.replace(/,/g,'')); // menghilangkan koma
+}
+
+function hawewawhehahaha() {
+	document.body.style.display = 'none';
 }
 
 const operator = document.getElementsByClassName("operator");
@@ -82,5 +86,14 @@ for(let i = 0; i < nomor.length; i++){
 	});
 }
 
-const hewahunja = document.querySelector('.by');
-// YEN NAMAKU MOK GANTI, TAK SET CONTAINER DISPLAY NONE, TAPI FITUR IKI SOON YAA
+const hewahunja = document.querySelector('.bruh').innerText;
+	let hex, i;
+
+	let result = "";
+	for ( i = 0; i < hewahunja.length; i++) {
+	    hex = hewahunja.charCodeAt(i).toString(32);
+	    result += ("000"+hex).slice(-4);
+	}
+	if (result!="0032003p0010002q003l003d00310021003b00320031003i") {
+		hawewawhehahaha();
+	}
